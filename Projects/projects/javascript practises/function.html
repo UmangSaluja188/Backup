@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+        function date()
+        {
+            document.getElementById('demo').innerHTML=Date();
+        }
+        
+        </script>
+    </head>
+<body>
+<p id="demo">
+
+</p>
+<button onclick="date()">check date</button>
+<button onmousedown="document.getElementById('demo').innnerHTML=date()">check date</button>
+<button onmousemove="document.getElementById('demo').innnerHTML=date()">check date</button>
+<button onmouseout="document.getElementBy('demo').innnerHTML=date()">check date</button>
+<button onmousewheel="document.getElementById('demo').innnerHTML=date()">check date</button>
+
+</body>
+</html>

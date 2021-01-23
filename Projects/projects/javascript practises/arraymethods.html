@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <script>
+            //array concat
+        var morningsubjects=['c','c++','java'];
+        var eveningsubjects=['javascript','html','css'];
+        var result=morningsubjects.concat(eveningsubjects);
+        document.write(result+"<br/>");
+        var result2=morningsubjects.concat(eveningsubjects,('react')+"<br/>");
+        document.write(result2);
+        </script>
+        <script>
+            //array fill
+            // shows bootstrap in place of all subjetcs
+        var sub=['node','angular','sql'];
+        var resultant=sub.fill("bootstrap"+"<br/>");
+        document.write(resultant);
+        // shows bootstrap starting from 1
+        var sub=['node','angular','sql'];
+        var resultant1=sub.fill("bootstrap",1);
+        document.write(resultant1+"<br/>");
+            // shows boot
+            var sub=['node','angular','sql'];
+        var resultant2=sub.fill("bootstrap",0,2);
+        document.write(resultant2+"<br/>");
+        //find value
+        var value=[1,2,3,4,6,7,8];
+        var result=value.find(x=>x>7);
+        document.write(result+"<br/>");
+       //find index
+       var value=[1,2,3,4,6,7,8];
+        var result1=value.findIndex(x=>x>7);
+        document.write(result1);
+// forEach
+var sum=0;
+      var no=[10,23,45,56];
+      no.forEach(function sum(no){
+          sum1=sum1+no;
+          document.write(sum1);
+      });
+        </script>
+<script>
+    // push element
+    var arr=['ram','aman'];
+    arr.push('ajay');
+    document.write(arr);
+</script> 
+<script>
+    // pop element
+    var arr=['ram','aman','ajay'];
+    arr.pop('ajay');
+    document.write(arr);
+</script>
+<script>
+    // shift element
+    var arr=['ram','aman'];
+    arr.shift('ajay');
+    document.write(arr);
+</script>
+<script>
+    // reverse element
+    var arr=['ram','aman'];
+    new arr=arr.reverse();
+    document.write(arr);
+</script>
+
+
+</head>
+</html>

@@ -1,0 +1,324 @@
+<html>
+  <head>
+    <style>
+      button{
+          background-color: rgba(128, 128, 128, 0.658);
+          height: 50px;
+          width:340px;
+          color:white;
+          font-weight:50px;
+          font-size: 30px;
+          border: black;
+      }
+     .b1{
+         height: 50px;
+         width:340px;
+         color:white;
+          font-weight:50px;
+          font-size: 25px;
+          background-color:rgba(0, 0, 0, 0.76);
+
+
+     }
+     .b2{
+      height: 50px;
+       width:340px;
+       color:white;
+      font-weight:50px;
+      font-size: 20px;
+    background-color:rgba(0, 0, 0, 0.76);
+
+     }
+     .fir{
+         background-color: rgba(0, 0, 0, 0.692);
+         height: 70px;
+         width:100%;
+         color:white;
+         text-align: center;
+         font-size: 30px;
+         padding: 10px;
+     
+
+     }
+     .sec
+     {
+         background-color:rgba(27, 27, 201, 0.52);
+         height: 100px;
+         width:100%;
+     }
+     .third{
+       background-color: azure;
+       height: 100px;
+       width: 300px;
+     float:right;
+     font-size:40px;
+     color:blue;
+     font-weight: bolder;
+     }
+    </style>
+  </head>
+  <body>
+    <script>
+    function fone()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var t2=document.getElementById("third2");
+      t2.innerText=preValue+"1";
+      
+    }
+    function ftwo()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var t2=document.getElementById("third2");
+      t2.innerText=preValue+"2";
+      
+    }
+    function fthree()
+    {
+      var t2=document.getElementById("third2");
+      var preValue=t2.innerText;
+      t2.innerText=preValue+"3";
+    }
+    
+    function ffour()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var t2=document.getElementById("third2");
+      t2.innerText=preValue+"4";
+    }
+    function ffive()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var t2=document.getElementById("third2");
+      t2.innerText=preValue+"5";
+    }
+    function fsix()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var t2=document.getElementById("third2");
+      t2.innerText=preValue+"6";
+    }
+    function fseven()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var t2=document.getElementById("third2");
+      t2.innerText=preValue+"7";
+    }
+    function feight()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var t2=document.getElementById("third2");
+      t2.innerText=preValue+"8";
+    }
+    function fnine()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var t2=document.getElementById("third2");
+      t2.innerText=preValue+"9";
+    }
+    function fdoublezero()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var t2=document.getElementById("third2");
+      t2.innerText=preValue+"00";
+    }function fzero()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var t2=document.getElementById("third2");
+      t2.innerText=preValue+"0";
+    }
+    function ftripplezero()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var t2=document.getElementById("third2");
+      t2.innerText=preValue+"000";
+    }
+    function fplus()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var t2=document.getElementById("third2");
+      t2.innerText=preValue+"+";
+    }
+    function fsub()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var t2=document.getElementById("third2");
+      t2.innerText=preValue+"-";
+    }
+    function fmul()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var t2=document.getElementById("third2");
+      t2.innerText=preValue+"*";
+    }
+    function fdiv()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var t2=document.getElementById("third2");
+      t2.innerText=preValue+"/";
+    }
+    function fdel()
+    {
+      var preValue=document.getElementById("third2").innerHTML;
+      var t2=document.getElementById("third2");
+      var string=preValue.slice(0,-1);
+      t2.innerText=string;
+    }
+    function fclr()
+    {
+    
+      var t2=document.getElementById("third2");
+      t2.innerText="0";
+    }
+    function fdot()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var t2=document.getElementById("third2");
+      t2.innerText=preValue+".";
+    }
+    function fequal()
+    {
+      var preValue=document.getElementById("third2").innerText;
+      var len=preValue.length;
+      var firstValue="";
+      var secondValue="";
+var i=0;
+var index=0;
+      while(i<len)
+      {
+        if(preValue.charAt(i)!='+' && index==0)
+        {
+          firstValue+=preValue.charAt(i);
+        }
+        if(preValue.charAt(i)=='+')
+        {
+          index=1;
+        }
+        if(preValue.charAt(i)!='+' && index==1)
+        {
+          secondValue+=preValue.charAt(i);      
+        }
+        i++;
+      }
+
+      alert("FirstValue="+firstValue+" and Second Value is "+secondValue);
+    }
+    function fequalto()
+    {
+      var t3=document.getElementById("third").innerText;
+    var firstvalue="";
+    var secondvalue="";
+    var len=preValue.length;
+    var index=0;
+    var i=0;
+    
+
+    }
+    </script>
+    <div class="fir">
+      ALL CURRENCY CONVERTOR
+    </div>
+    <div class="sec">
+     <select name="options" id="id1">
+       <option class="en" value="en"
+>AED</option>
+<option class="en" value="en"
+>AFN</option>
+<option class="en" value="en"
+>ALL</option>
+<option class="en" value="en"
+>AMD</option>
+<option class="en" value="en"
+>ANG</option>
+<option class="en" value="en"
+>AED</option>
+<option class="en" value="en"
+>AED</option>
+<option class="en" value="en"
+>AED</option>
+<option class="en" value="en"
+>AED</option>
+<option class="en" value="en"
+>AED</option>
+</select>
+  <select name="options"id="id2">
+    <option class="en" value="en"
+>AED</option>
+<option class="en" value="en"
+>AFN</option>
+<option class="en" value="en"
+>ALL</option>
+<option class="en" value="en"
+>AMD</option>
+<option class="en" value="en"
+>ANG</option>
+<option class="en" value="en"
+>AED</option>
+<option class="en" value="en"
+>AED</option>
+<option class="en" value="en"
+>AED</option>
+<option class="en" value="en"
+>AED</option>
+<option class="en" value="en"
+>AED</option>
+</select>
+    
+<div class="third" id="third2">
+
+</div>
+
+</div>
+<div>
+  <table>
+      <tr>
+          <td><button onclick="fun1()"class="b2" >CURRENCY UPDATE</button></td>
+          <td><button class="b2">TRENDS & CHARTS</button></td>
+          <td><button class="b2">CURRENCY FAVOURITES</button></td>
+          <td><button class="b2">CURRENCY ROTATE</button></td>
+         </tr>
+  </table>
+</div>
+<div>
+<table>
+<tr class="table1">
+  <td><button class="b1">COPY</button></td>
+  <td><button class="b1">SEND</button></td>
+  <td><button class="b1" onclick="fclr()">CLR </button></td>
+  <td><button class="b1" onclick="fdel()">DEL</button></td>
+ </tr>
+</table>
+</div>                                                
+<div class="style1">
+<table>
+<tr>
+<td><button id="nine" onclick="fnine()" >9</button></td>
+<td><button id="eight" onclick="feight()">8</button></td>
+<td><button id="seven" onclick="fseven()">7</button></td>
+<td><button id="divide" onclick="fdiv()" class="b1">/</button></td>
+</tr>
+<tr> <td><button id="six" onclick="fsix()" >6</button></td>
+<td><button id="five"onclick="ffive()">5</button></td>
+<td><button id="four" onclick="ffour()">4</button></td>
+<td><button id="mul" class="b1"  onclick="fmul()">*</button></td>
+</tr>
+<tr> <td><button id="three"  onclick="fthree()">3</button></td>    
+<td><button id="two"  onclick="ftwo()">2</button></td>    
+<td><button id="one"  onclick="fone()">1</button> </td>
+<td><button class="b1" onclick="fsub()">-</button></td></tr>   
+<tr><td><button id="zero"  onclick="fzero()">0</button></td>    
+<td><button id="doublezero"  onclick="fdoublezero()">00</button></td>
+<td><button id="triplezero" onclick="ftripple()">000</button></td>
+<td><button id="plus" class="b1"  onclick="fplus()">+</button></td> 
+</div>      
+<div>
+<table>
+<tr class="table1">
+  <td><button class="b2"><font color="red">MULTI CURRENCY CONVERTOR</font></button></td>
+  <td><button class="b1">+</button></td>
+  <td><button class="b1" onclick="fdot()">.</button></td>
+  <td><button  style=background-color:red onclick="fequal()">=</button></td>
+</tr>
+</table>
+</div> </body>
+</html>

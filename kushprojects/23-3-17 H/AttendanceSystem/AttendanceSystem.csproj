@@ -1,0 +1,847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00651D88-6EA5-4AAC-A06A-D186712331C6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AttendanceSystem</RootNamespace>
+    <AssemblyName>AttendanceSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>disabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>true</IISExpressUseClassicPipelineMode>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin View\AdminMasterPage\AdminHomePage.aspx" />
+    <Content Include="Admin View\CheckAttendance.aspx" />
+    <Content Include="Admin View\ManageNotice\NSendNotice.aspx" />
+    <Content Include="Admin View\ManageNotice\SearchNoticeDetails.aspx" />
+    <Content Include="Admin View\NewFolder1\StyleSheet1.css" />
+    <Content Include="Admin View\ManageCollegeTiming\EditCollegeTiming.aspx" />
+    <Content Include="Admin View\ManageFineDetails\AddFineDetails.aspx" />
+    <Content Include="Admin View\ManageFineDetails\EditFineDetails.aspx" />
+    <Content Include="Admin View\ManageFineDetails\SearchFineDetails.aspx" />
+    <Content Include="Admin View\ManageNotice\SendNotice.aspx" />
+    <Content Include="Admin View\ManageStudent\UpdateStudentDetails.aspx" />
+    <Content Include="Admin View\ManageStudent\WebForm2.aspx" />
+    <Content Include="Admin View\ManageTeacherTimeTable\WebForm1.aspx" />
+    <Content Include="Admin View\AdminMasterPage\Bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Admin View\AdminMasterPage\Bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Admin View\AdminMasterPage\Bootstrap\css\bootstrap.css" />
+    <Content Include="Admin View\AdminMasterPage\Bootstrap\css\bootstrap.min.css" />
+    <Content Include="Admin View\AdminMasterPage\Bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Admin View\AdminMasterPage\Bootstrap\js\bootstrap.js" />
+    <Content Include="Admin View\AdminMasterPage\Bootstrap\js\bootstrap.min.js" />
+    <Content Include="Admin View\AdminMasterPage\Bootstrap\js\npm.js" />
+    <Content Include="Admin View\AdminMasterPage\j.css" />
+    <Content Include="Admin View\AdminMasterPage\Scripts\JavaScript1.js" />
+    <Content Include="Admin View\AdminMasterPage\WebForm3.aspx" />
+    <Content Include="Admin View\AdminMasterPage\WebForm4.aspx" />
+    <Content Include="Admin View\StyleSheetA\AdminHomePage.css" />
+    <Content Include="Admin View\WebForm1.aspx" />
+    <Content Include="AllScriptcode\MasterPagejs.js" />
+    <Content Include="Admin View\AttendanceDetails.aspx" />
+    <Content Include="Bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Bootstrap\css\bootstrap.css" />
+    <Content Include="Bootstrap\css\bootstrap.min.css" />
+    <Content Include="Bootstrap\js\bootstrap.js" />
+    <Content Include="Bootstrap\js\bootstrap.min.js" />
+    <Content Include="Bootstrap\js\npm.js" />
+    <Content Include="Copy of Scripts\1.js" />
+    <Content Include="Copy of Scripts\jquery-3.1.1.min %281%29.js" />
+    <Content Include="HomeImg.png" />
+    <Content Include="HomePage1.aspx" />
+    <Content Include="Images\abc.jpg" />
+    <Content Include="Images\aaa1.jpg" />
+    <Content Include="Images\b1.png" />
+    <Content Include="Images\b2.png" />
+    <Content Include="Images\b3.jpg" />
+    <Content Include="Images\back-arrow-orange.png" />
+    <Content Include="Images\back-icon.png" />
+    <Content Include="Images\back1.jpg" />
+    <Content Include="Images\back2.jpg" />
+    <Content Include="Images\back3.jpg" />
+    <Content Include="Images\back4.jpg" />
+    <Content Include="Images\back5.jpg" />
+    <Content Include="Images\back6.jpg" />
+    <Content Include="Images\backbutton.png" />
+    <Content Include="Images\c1 %281%29.jpg" />
+    <Content Include="Images\c2.jpg" />
+    <Content Include="Images\facebook-solid.png" />
+    <Content Include="Images\gg.jpg" />
+    <Content Include="Images\gmail %281%29.png" />
+    <Content Include="Images\gmail %282%29.png" />
+    <Content Include="Images\jjj.jpg" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\111.png" />
+    <Content Include="Images\12.jpg" />
+    <Content Include="Images\12746461_233050037036705_1791437766_n.jpg" />
+    <Content Include="Images\13nov_KBCWebGame.png" />
+    <Content Include="Images\140719vj5gc9km6743mikr.png" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\24.png" />
+    <Content Include="Images\3.jpg" />
+    <Content Include="Images\a1.jpg" />
+    <Content Include="Images\a2.jpg" />
+    <Content Include="Images\a3.png" />
+    <Content Include="Images\admin.jpg" />
+    <Content Include="Images\arrow.png" />
+    <Content Include="Images\b1.jpg" />
+    <Content Include="Images\C1.png" />
+    <Content Include="Images\Chrysanthemum.jpg" />
+    <Content Include="Images\collegeImage.jpg" />
+    <Content Include="Images\D1.png" />
+    <Content Include="Images\D2.png" />
+    <Content Include="Images\download.jpg" />
+    <Content Include="Images\H1.png" />
+    <Content Include="Images\HomeImg.png" />
+    <Content Include="Images\images.jpg" />
+    <Content Include="Images\Koala.jpg" />
+    <Content Include="Images\Lighthouse.jpg" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\n.jpg" />
+    <Content Include="Images\NePic.jpg" />
+    <Content Include="Images\newHome.png" />
+    <Content Include="Images\people12.png" />
+    <Content Include="Images\pink.png" />
+    <Content Include="Images\SE1.png" />
+    <Content Include="Images\Search.jpg" />
+    <Content Include="Images\sky.png" />
+    <Content Include="Images\ST1.png" />
+    <Content Include="Images\Student.jpg" />
+    <Content Include="Images\SU1.png" />
+    <Content Include="Images\SU2.png" />
+    <Content Include="Images\T2.png" />
+    <Content Include="Images\Teacher.jpg" />
+    <Content Include="Images\Teacher1.png" />
+    <Content Include="Images\Teacher3.jpg" />
+    <Content Include="Images\Teacher4.jpg" />
+    <Content Include="Images\TT1.png" />
+    <Content Include="Images\twitter %281%29.png" />
+    <Content Include="Images\twitter %282%29.png" />
+    <Content Include="link.aspx" />
+    <Content Include="LogInFolder\AdminLogInPage.aspx" />
+    <Content Include="LogInFolder\LogInHomePage.aspx" />
+    <Content Include="LogInFolder\LogInPage.aspx" />
+    <Content Include="LogInFolder\NewHomePage.aspx" />
+    <Content Include="LogInFolder\StudentLogIn.aspx" />
+    <Content Include="LogInFolder\TeacherLogIn.aspx" />
+    <Content Include="Admin View\Manage_Department\AddDepartment.aspx" />
+    <Content Include="Admin View\Manage_Department\DeleteDepartment.aspx" />
+    <Content Include="Admin View\Manage_Department\SearchDepartment.aspx" />
+    <Content Include="Admin View\Manage_Department\UpdateDepartment.aspx" />
+    <Content Include="Admin View\Manage Subject\AddSubjectDetails.aspx" />
+    <Content Include="Admin View\Manage Subject\DeleteSubjectDetails.aspx" />
+    <Content Include="Admin View\Manage Subject\SearchSubjectDetails.aspx" />
+    <Content Include="Admin View\Manage Subject\UpdateSubjectDetails.aspx" />
+    <Content Include="Admin View\ManageCourse\AddCourse.aspx" />
+    <Content Include="Admin View\ManageCourse\DeleteCourse.aspx" />
+    <Content Include="Admin View\ManageCourse\SearchCourseDetails.aspx" />
+    <Content Include="Admin View\ManageCourse\UpdateCourse.aspx" />
+    <Content Include="Admin View\ManageHoliday\AddHoliday.aspx" />
+    <Content Include="Admin View\ManageSemester\AddSemester.aspx" />
+    <Content Include="Admin View\ManageSemester\DeleteSemester.aspx" />
+    <Content Include="Admin View\ManageSemester\SearchSemester.aspx" />
+    <Content Include="Admin View\ManageSemester\UpdateSemester.aspx" />
+    <Content Include="Admin View\ManageStudent\AddNewStu.aspx" />
+    <Content Include="Admin View\ManageStudent\DeleteStudentRecord.aspx" />
+    <Content Include="Admin View\ManageStudent\SearchStudentDetails2.aspx" />
+    <Content Include="Admin View\ManageStudent\SearchStudentRecord.aspx" />
+    <Content Include="App_Data\MyDataBase.mdf" />
+    <Content Include="App_Data\MyDataBase_log.ldf">
+      <DependentUpon>MyDataBase.mdf</DependentUpon>
+    </Content>
+    <Content Include="Admin View\ManageStudent\WebForm1.aspx" />
+    <Content Include="Admin View\ManageTeacherTimeTable\AddTimeTable1.aspx" />
+    <Content Include="Admin View\ManageTeacherTimeTable\SearchTimeTable.aspx" />
+    <Content Include="Admin View\ManageTeacher\AddNewTeacher.aspx" />
+    <Content Include="Admin View\ManageTeacher\DeleteTeacherRecord.aspx" />
+    <Content Include="Admin View\ManageTeacher\SearchTeacherRecord.aspx" />
+    <Content Include="Admin View\ManageTeacher\UpdateTeacher.aspx" />
+    <Content Include="Scripts\jquery-3.1.1.min %281%29.js" />
+    <Content Include="Scripts\1.js" />
+    <Content Include="StudentView\Bootstrap\css\bootstrap-theme.css" />
+    <Content Include="StudentView\Bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="StudentView\Bootstrap\css\bootstrap.css" />
+    <Content Include="StudentView\Bootstrap\css\bootstrap.min.css" />
+    <Content Include="StudentView\Bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="StudentView\Bootstrap\js\bootstrap.js" />
+    <Content Include="StudentView\Bootstrap\js\bootstrap.min.js" />
+    <Content Include="StudentView\Bootstrap\js\npm.js" />
+    <Content Include="StudentView\CheckTotalFine.aspx" />
+    <Content Include="StudentView\SearchDetAtte.aspx" />
+    <Content Include="StudentView\SerachAttendanceBySTudent.aspx" />
+    <Content Include="StudentView\TakeLeave.aspx" />
+    <Content Include="StudentView\ViewPersonalDetails.aspx" />
+    <Content Include="StudentView\ViewTimeTable.aspx" />
+    <Content Include="StudentView\StudentHomePage.aspx" />
+    <Content Include="TeacherView\AcceptAndRejectLeave.aspx" />
+    <Content Include="TeacherView\Bootstrap\css\bootstrap-theme.css" />
+    <Content Include="TeacherView\Bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="TeacherView\Bootstrap\css\bootstrap.css" />
+    <Content Include="TeacherView\Bootstrap\css\bootstrap.min.css" />
+    <Content Include="TeacherView\Bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="TeacherView\Bootstrap\js\bootstrap.js" />
+    <Content Include="TeacherView\Bootstrap\js\bootstrap.min.js" />
+    <Content Include="TeacherView\Bootstrap\js\npm.js" />
+    <Content Include="TeacherView\CheckFineDetails.aspx" />
+    <Content Include="TeacherView\CheckLeaveDetails.aspx" />
+    <Content Include="TeacherView\EditAttendanceNew.aspx" />
+    <Content Include="TeacherView\SearchAttendance.aspx" />
+    <Content Include="TeacherView\SendNotice.aspx" />
+    <Content Include="TeacherView\StudentAttendanceDetails.aspx" />
+    <Content Include="TeacherView\StudentProfile.aspx" />
+    <Content Include="TeacherView\TakeAttend.aspx" />
+    <Content Include="TeacherView\TakeAtteStyle\TATTENDsTYLE.css" />
+    <Content Include="TeacherView\TeacherHomePage.aspx" />
+    <Content Include="TeacherView\ViewStudentProfile.aspx" />
+    <Content Include="TeacherView\WebForm2.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin View\AdminMasterPage\AdminHomePage.aspx.cs">
+      <DependentUpon>AdminHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\AdminMasterPage\AdminHomePage.aspx.designer.cs">
+      <DependentUpon>AdminHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\AdminMasterPage\Site4.Master.cs">
+      <DependentUpon>Site4.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\AdminMasterPage\Site4.Master.designer.cs">
+      <DependentUpon>Site4.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\AdminMasterPage\Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\AdminMasterPage\Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\AdminMasterPage\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\AdminMasterPage\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\AdminMasterPage\WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\AdminMasterPage\WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\AdminMasterPage\WebForm4.aspx.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\AdminMasterPage\WebForm4.aspx.designer.cs">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\CheckAttendance.aspx.cs">
+      <DependentUpon>CheckAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\CheckAttendance.aspx.designer.cs">
+      <DependentUpon>CheckAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageCollegeTiming\EditCollegeTiming.aspx.cs">
+      <DependentUpon>EditCollegeTiming.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageCollegeTiming\EditCollegeTiming.aspx.designer.cs">
+      <DependentUpon>EditCollegeTiming.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageFineDetails\AddFineDetails.aspx.cs">
+      <DependentUpon>AddFineDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageFineDetails\AddFineDetails.aspx.designer.cs">
+      <DependentUpon>AddFineDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageFineDetails\EditFineDetails.aspx.cs">
+      <DependentUpon>EditFineDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageFineDetails\EditFineDetails.aspx.designer.cs">
+      <DependentUpon>EditFineDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageFineDetails\SearchFineDetails.aspx.cs">
+      <DependentUpon>SearchFineDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageFineDetails\SearchFineDetails.aspx.designer.cs">
+      <DependentUpon>SearchFineDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageNotice\NSendNotice.aspx.cs">
+      <DependentUpon>NSendNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageNotice\NSendNotice.aspx.designer.cs">
+      <DependentUpon>NSendNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageNotice\SearchNoticeDetails.aspx.cs">
+      <DependentUpon>SearchNoticeDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageNotice\SearchNoticeDetails.aspx.designer.cs">
+      <DependentUpon>SearchNoticeDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageNotice\SendNotice.aspx.cs">
+      <DependentUpon>SendNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageNotice\SendNotice.aspx.designer.cs">
+      <DependentUpon>SendNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageStudent\UpdateStudentDetails.aspx.cs">
+      <DependentUpon>UpdateStudentDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageStudent\UpdateStudentDetails.aspx.designer.cs">
+      <DependentUpon>UpdateStudentDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageStudent\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageStudent\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageTeacherTimeTable\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageTeacherTimeTable\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\AttendanceDetails.aspx.cs">
+      <DependentUpon>AttendanceDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\AttendanceDetails.aspx.designer.cs">
+      <DependentUpon>AttendanceDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage1.aspx.cs">
+      <DependentUpon>HomePage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage1.aspx.designer.cs">
+      <DependentUpon>HomePage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="link.aspx.cs">
+      <DependentUpon>link.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="link.aspx.designer.cs">
+      <DependentUpon>link.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogInFolder\AdminLogInPage.aspx.cs">
+      <DependentUpon>AdminLogInPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogInFolder\AdminLogInPage.aspx.designer.cs">
+      <DependentUpon>AdminLogInPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogInFolder\LogInHomePage.aspx.cs">
+      <DependentUpon>LogInHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogInFolder\LogInHomePage.aspx.designer.cs">
+      <DependentUpon>LogInHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogInFolder\LogInPage.aspx.cs">
+      <DependentUpon>LogInPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogInFolder\LogInPage.aspx.designer.cs">
+      <DependentUpon>LogInPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogInFolder\NewHomePage.aspx.cs">
+      <DependentUpon>NewHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogInFolder\NewHomePage.aspx.designer.cs">
+      <DependentUpon>NewHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogInFolder\StudentLogIn.aspx.cs">
+      <DependentUpon>StudentLogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogInFolder\StudentLogIn.aspx.designer.cs">
+      <DependentUpon>StudentLogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogInFolder\TeacherLogIn.aspx.cs">
+      <DependentUpon>TeacherLogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogInFolder\TeacherLogIn.aspx.designer.cs">
+      <DependentUpon>TeacherLogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\Manage_Department\AddDepartment.aspx.cs">
+      <DependentUpon>AddDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\Manage_Department\AddDepartment.aspx.designer.cs">
+      <DependentUpon>AddDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\Manage_Department\DeleteDepartment.aspx.cs">
+      <DependentUpon>DeleteDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\Manage_Department\DeleteDepartment.aspx.designer.cs">
+      <DependentUpon>DeleteDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\Manage_Department\SearchDepartment.aspx.cs">
+      <DependentUpon>SearchDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\Manage_Department\SearchDepartment.aspx.designer.cs">
+      <DependentUpon>SearchDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\Manage_Department\UpdateDepartment.aspx.cs">
+      <DependentUpon>UpdateDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\Manage_Department\UpdateDepartment.aspx.designer.cs">
+      <DependentUpon>UpdateDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\Manage Subject\AddSubjectDetails.aspx.cs">
+      <DependentUpon>AddSubjectDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\Manage Subject\AddSubjectDetails.aspx.designer.cs">
+      <DependentUpon>AddSubjectDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\Manage Subject\DeleteSubjectDetails.aspx.cs">
+      <DependentUpon>DeleteSubjectDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\Manage Subject\DeleteSubjectDetails.aspx.designer.cs">
+      <DependentUpon>DeleteSubjectDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\Manage Subject\SearchSubjectDetails.aspx.cs">
+      <DependentUpon>SearchSubjectDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\Manage Subject\SearchSubjectDetails.aspx.designer.cs">
+      <DependentUpon>SearchSubjectDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\Manage Subject\UpdateSubjectDetails.aspx.cs">
+      <DependentUpon>UpdateSubjectDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\Manage Subject\UpdateSubjectDetails.aspx.designer.cs">
+      <DependentUpon>UpdateSubjectDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageCourse\AddCourse.aspx.cs">
+      <DependentUpon>AddCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageCourse\AddCourse.aspx.designer.cs">
+      <DependentUpon>AddCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageCourse\DeleteCourse.aspx.cs">
+      <DependentUpon>DeleteCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageCourse\DeleteCourse.aspx.designer.cs">
+      <DependentUpon>DeleteCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageCourse\SearchCourseDetails.aspx.cs">
+      <DependentUpon>SearchCourseDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageCourse\SearchCourseDetails.aspx.designer.cs">
+      <DependentUpon>SearchCourseDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageCourse\UpdateCourse.aspx.cs">
+      <DependentUpon>UpdateCourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageCourse\UpdateCourse.aspx.designer.cs">
+      <DependentUpon>UpdateCourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageHoliday\AddHoliday.aspx.cs">
+      <DependentUpon>AddHoliday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageHoliday\AddHoliday.aspx.designer.cs">
+      <DependentUpon>AddHoliday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageSemester\AddSemester.aspx.cs">
+      <DependentUpon>AddSemester.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageSemester\AddSemester.aspx.designer.cs">
+      <DependentUpon>AddSemester.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageSemester\DeleteSemester.aspx.cs">
+      <DependentUpon>DeleteSemester.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageSemester\DeleteSemester.aspx.designer.cs">
+      <DependentUpon>DeleteSemester.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageSemester\SearchSemester.aspx.cs">
+      <DependentUpon>SearchSemester.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageSemester\SearchSemester.aspx.designer.cs">
+      <DependentUpon>SearchSemester.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageSemester\UpdateSemester.aspx.cs">
+      <DependentUpon>UpdateSemester.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageSemester\UpdateSemester.aspx.designer.cs">
+      <DependentUpon>UpdateSemester.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageStudent\AddNewStu.aspx.cs">
+      <DependentUpon>AddNewStu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageStudent\AddNewStu.aspx.designer.cs">
+      <DependentUpon>AddNewStu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageStudent\DeleteStudentRecord.aspx.cs">
+      <DependentUpon>DeleteStudentRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageStudent\DeleteStudentRecord.aspx.designer.cs">
+      <DependentUpon>DeleteStudentRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageStudent\SearchStudentDetails2.aspx.cs">
+      <DependentUpon>SearchStudentDetails2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageStudent\SearchStudentDetails2.aspx.designer.cs">
+      <DependentUpon>SearchStudentDetails2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageStudent\SearchStudentRecord.aspx.cs">
+      <DependentUpon>SearchStudentRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageStudent\SearchStudentRecord.aspx.designer.cs">
+      <DependentUpon>SearchStudentRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageStudent\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageStudent\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageTeacherTimeTable\AddTimeTable1.aspx.cs">
+      <DependentUpon>AddTimeTable1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageTeacherTimeTable\AddTimeTable1.aspx.designer.cs">
+      <DependentUpon>AddTimeTable1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageTeacherTimeTable\SearchTimeTable.aspx.cs">
+      <DependentUpon>SearchTimeTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageTeacherTimeTable\SearchTimeTable.aspx.designer.cs">
+      <DependentUpon>SearchTimeTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageTeacher\AddNewTeacher.aspx.cs">
+      <DependentUpon>AddNewTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageTeacher\AddNewTeacher.aspx.designer.cs">
+      <DependentUpon>AddNewTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageTeacher\DeleteTeacherRecord.aspx.cs">
+      <DependentUpon>DeleteTeacherRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageTeacher\DeleteTeacherRecord.aspx.designer.cs">
+      <DependentUpon>DeleteTeacherRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageTeacher\SearchTeacherRecord.aspx.cs">
+      <DependentUpon>SearchTeacherRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageTeacher\SearchTeacherRecord.aspx.designer.cs">
+      <DependentUpon>SearchTeacherRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin View\ManageTeacher\UpdateTeacher.aspx.cs">
+      <DependentUpon>UpdateTeacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin View\ManageTeacher\UpdateTeacher.aspx.designer.cs">
+      <DependentUpon>UpdateTeacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentView\CheckTotalFine.aspx.cs">
+      <DependentUpon>CheckTotalFine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView\CheckTotalFine.aspx.designer.cs">
+      <DependentUpon>CheckTotalFine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView\SearchDetAtte.aspx.cs">
+      <DependentUpon>SearchDetAtte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView\SearchDetAtte.aspx.designer.cs">
+      <DependentUpon>SearchDetAtte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView\SerachAttendanceBySTudent.aspx.cs">
+      <DependentUpon>SerachAttendanceBySTudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView\SerachAttendanceBySTudent.aspx.designer.cs">
+      <DependentUpon>SerachAttendanceBySTudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView\TakeLeave.aspx.cs">
+      <DependentUpon>TakeLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView\TakeLeave.aspx.designer.cs">
+      <DependentUpon>TakeLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView\ViewPersonalDetails.aspx.cs">
+      <DependentUpon>ViewPersonalDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView\ViewPersonalDetails.aspx.designer.cs">
+      <DependentUpon>ViewPersonalDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView\ViewTimeTable.aspx.cs">
+      <DependentUpon>ViewTimeTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView\ViewTimeTable.aspx.designer.cs">
+      <DependentUpon>ViewTimeTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView\StudentHomePage.aspx.cs">
+      <DependentUpon>StudentHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentView\StudentHomePage.aspx.designer.cs">
+      <DependentUpon>StudentHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\AcceptAndRejectLeave.aspx.cs">
+      <DependentUpon>AcceptAndRejectLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\AcceptAndRejectLeave.aspx.designer.cs">
+      <DependentUpon>AcceptAndRejectLeave.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\CheckFineDetails.aspx.cs">
+      <DependentUpon>CheckFineDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\CheckFineDetails.aspx.designer.cs">
+      <DependentUpon>CheckFineDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\CheckLeaveDetails.aspx.cs">
+      <DependentUpon>CheckLeaveDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\CheckLeaveDetails.aspx.designer.cs">
+      <DependentUpon>CheckLeaveDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\EditAttendanceNew.aspx.cs">
+      <DependentUpon>EditAttendanceNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\EditAttendanceNew.aspx.designer.cs">
+      <DependentUpon>EditAttendanceNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\SearchAttendance.aspx.cs">
+      <DependentUpon>SearchAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\SearchAttendance.aspx.designer.cs">
+      <DependentUpon>SearchAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\SendNotice.aspx.cs">
+      <DependentUpon>SendNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\SendNotice.aspx.designer.cs">
+      <DependentUpon>SendNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\StudentAttendanceDetails.aspx.cs">
+      <DependentUpon>StudentAttendanceDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\StudentAttendanceDetails.aspx.designer.cs">
+      <DependentUpon>StudentAttendanceDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\StudentProfile.aspx.cs">
+      <DependentUpon>StudentProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\StudentProfile.aspx.designer.cs">
+      <DependentUpon>StudentProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\TakeAttend.aspx.cs">
+      <DependentUpon>TakeAttend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\TakeAttend.aspx.designer.cs">
+      <DependentUpon>TakeAttend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\TeacherHomePage.aspx.cs">
+      <DependentUpon>TeacherHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\TeacherHomePage.aspx.designer.cs">
+      <DependentUpon>TeacherHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\ViewStudentProfile.aspx.cs">
+      <DependentUpon>ViewStudentProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\ViewStudentProfile.aspx.designer.cs">
+      <DependentUpon>ViewStudentProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherView\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin View\AdminMasterPage\Site4.Master" />
+    <Content Include="Admin View\AdminMasterPage\Site2.Master" />
+    <Content Include="Admin View\AdminMasterPage\Site1.Master" />
+    <Content Include="Admin View\AdminMasterPage\Bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Admin View\AdminMasterPage\Bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="Admin View\AdminMasterPage\Bootstrap\css\bootstrap.css.map" />
+    <Content Include="Admin View\AdminMasterPage\Bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Admin View\AdminMasterPage\Bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Admin View\AdminMasterPage\Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Admin View\AdminMasterPage\Bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Admin View\AdminMasterPage\Bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="TeacherView\Site1.Master" />
+    <Content Include="StudentView\Site1.Master" />
+    <Content Include="StudentView\Bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="StudentView\Bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="StudentView\Bootstrap\css\bootstrap.css.map" />
+    <Content Include="StudentView\Bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="StudentView\Bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="StudentView\Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="StudentView\Bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="StudentView\Bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="TeacherView\Bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="TeacherView\Bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="TeacherView\Bootstrap\css\bootstrap.css.map" />
+    <Content Include="TeacherView\Bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="TeacherView\Bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="TeacherView\Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="TeacherView\Bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="TeacherView\Bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="Bootstrap\css\bootstrap.css.map" />
+    <Content Include="Bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51856</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56128/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

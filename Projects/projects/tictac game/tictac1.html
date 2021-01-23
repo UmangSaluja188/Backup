@@ -1,0 +1,599 @@
+<html>
+<head>
+    <style>
+        .table1{       
+            margin-left: 10px;
+            padding: 20px;
+            height: 100px;
+            width:250px;
+        float:left;
+        }
+        .div1{
+            margin-top: 10px;
+            margin-left: 40px;
+        }
+        .table2{
+           color:aliceblue;
+           height:200px;
+           width:250px;  
+            margin-left: 10px;
+            padding: 12px;
+        float:right;
+        }
+        body{
+            background-color: rgb(27, 172, 27);
+        }
+        button{
+            height:150px;
+            width:150px;
+            background-color: red;
+            font-size: 50px;
+            color:white;
+            font-weight: bold;
+            }
+            .tb3{
+                background-color: yellow;
+                height:100px;
+                width:250px;
+                padding: 5px;
+                font-weight: bold;
+                color:azure;
+                float:right;
+            }
+    </style>
+    </head>
+<title> tic tac toe
+</title>
+<body>
+   <div class="table1">
+        <table bgcolor="red">
+            <tr><td>PLAYER1</td></tr>
+            <tr>
+                <td>Name</td>
+                <td id="pl1"></td>
+            </tr>
+            <tr> <td>Score</td>
+                <td id="mscore1"></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="table2">
+            <table bgcolor="yellow">
+                <tr><td>PLAYER 2</td></tr>
+                <tr>
+                    <td>Name</td>
+                    <td id="pl2"></td>
+                </tr>
+                <tr> <td>Score</td>
+                    <td id=mscore2></td>
+                </tr>
+            </table>
+        </div>
+     
+        <audio id="sound1" src="./songs/Dil.mp3" ></audio>
+            
+        <center>
+            
+            <img src="G:\apps\projects\tictac game\images\tic.jpg">
+
+            <div class="div1">
+                <table >
+                    <tr><td><button id="b1" onclick="f1()" ></button></td>
+                        <td><button id="b2" onclick="f2()" ></button></td>
+                        <td><button id="b3"onclick="f3()"></button></td>
+                    </tr>
+                    <tr>
+                    <td><button id="b4" onclick="f4()"></button></td>
+                    <td><button id="b5"onclick="f5()"></button></td>
+                    <td><button id="b6"onclick="f6()"></button></td> 
+                 </tr>
+                     <tr>
+                      <td><button id="b7" onclick="f7()"></button>
+                      </td>
+                      <td><button id="b8"onclick="f8()"></button>
+                      </td>
+                      <td><button id="b9" onclick="f9()"></button></td>
+                    </tr>
+                </table>
+            </div></center>
+           
+            <div class="tb3" style="border:1px solid black">
+                <table>
+                        <tr>
+                                <td id="rn1"></td>
+                                <td id="score1">0</td>
+                            </tr>
+                          
+                    <tr>
+                        <td id="rn2"></td>
+                        <td id="score2">0</td>
+                    </tr>
+                    <tr><td id="">
+                        TIE
+                    </td>
+                        <td id="tie">0</td>
+                    </tr>
+                </table>
+            </div>
+         
+            <center> 
+             <button style="background-color:blue;float:left;color:white;font-size:20px;height:50px;float:left;width:100px" onclick="restart()">Restart</button>
+        </center>
+        </body>
+        
+    <script>
+        var value=0; 
+        var flag1=0,flag2=0,flag3=0,flag4=0,flag5=0,flag6=0,flag7=0,flag8=0,flag9=0;
+        var winflag=0;
+        var FirstPlayer,SecondPlayer;
+        var round=1;
+        var fscore=0,sscore=0,tscore=0;
+        var bt1=document.getElementById("b1");
+        var bt2=document.getElementById("b2");
+        var bt3=document.getElementById("b3");
+        var bt4=document.getElementById("b4");
+        var bt5=document.getElementById("b5");
+        var bt6=document.getElementById("b6");
+        var bt7=document.getElementById("b7");
+        var bt8=document.getElementById("b8");
+        var bt9=document.getElementById("b9");
+       
+        var roundspan=document.getElementById("round1");
+
+       // for getting score varaible
+       var scr1=document.getElementById("mscore1");
+       var scr2=document.getElementById("mscore2");
+        var FirstPlayer=document.getElementById("pl1");       
+        var SecondPlayer=document.getElementById('pl2');
+      
+        var name1=prompt("Enter First Player Name=");
+        var name2=prompt("Enter Second Player Name=");
+        
+
+        FirstPlayer.innerHTML=name1;
+        SecondPlayer.innerHTML=name2;
+
+        rname1=document.getElementById('rn1');
+        rname2=document.getElementById('rn2');
+
+        rname1.innerHTML=name1;
+        rname2.innerHTML=name2;
+        var sc1=document.getElementById('score1');
+        var sc2=document.getElementById('score2');
+        var audio;
+        audio=document.getElementById("song")
+        function ci()
+        {
+            document.getElementById('mi').src="./images/volumeon.jpg";
+        }
+ function restart()
+{
+    bt1.innerHTML="";
+    bt2.innerHTML="";
+    bt3.innerHTML="";
+    bt4.innerHTML="";
+    bt5.innerHTML="";
+    bt6.innerHTML="";
+    bt7.innerHTML="";
+    bt8.innerHTML="";
+    bt9.innerHTML="";
+    
+    if(winflag==1)
+    {
+        round=round+1;
+        roundspan.innerHTML=round;
+    }
+    //to change the style
+    bt1.style.backgroundColor="red";
+    bt2.style.backgroundColor="red";
+    bt3.style.backgroundColor="red";
+    bt4.style.backgroundColor="red";
+    bt5.style.backgroundColor="red";
+    bt6.style.backgroundColor="red";
+    bt7.style.backgroundColor="red";
+    bt8.style.backgroundColor="red";
+    bt9.style.backgroundColor="red";
+
+    //to change the value of flag
+    flag1=0;
+    flag2=0;
+    flag3=0;
+    flag4=0;
+    flag5=0;
+    flag6=0;
+    flag7=0;
+    flag8=0;
+    flag9=0;
+    winflag=0;
+    value=0;
+
+ }
+ function winner()
+ {
+ var val1=bt1.innerText;
+ var val2=bt2.innerText;
+ var val3=bt3.innerText;
+ var val4=bt4.innerText;
+ var val5=bt5.innerText;
+ var val6=bt6.innerText;
+ var val7=bt7.innerText;
+ var val8=bt8.innerText;
+ var val9=bt9.innerText;
+
+ if(val1=='X'&& val2=='X' && val3=='X')
+ {
+    bt1.style.backgroundColor="yellow";
+    bt2.style.backgroundColor="yellow";
+    bt3.style.backgroundColor="yellow";
+    winflag=1;
+    fscore+=1;
+    sc1.innerHTML=fscore;
+    scr1.innerHTML=fscore*100;
+    soundwin();
+ }
+else if(val4=='X'&& val5=='X' && val6=='X')
+{
+    bt4.style.backgroundColor="yellow";
+    bt5.style.backgroundColor="yellow";
+    bt6.style.backgroundColor="yellow";
+    winflag=1;
+    fscore+=1;
+    sc1.innerHTML=fscore;
+    scr1.innerHTML=fscore*100;
+    soundwin();
+}
+else if(val7=='X'&& val8=='X' && val9=='X')
+{
+    bt7.style.backgroundColor="yellow";
+    bt8.style.backgroundColor="yellow";
+    bt9.style.backgroundColor="yellow";
+    winflag=1;
+    fscore+=1;
+    sc1.innerHTML=fscore;
+    scr1.innerHTML=fscore*100;
+    soundwin();
+}
+else if(val1=='X'&& val4=='X' && val7=='X')
+{
+    bt1.style.backgroundColor="yellow";
+    bt4.style.backgroundColor="yellow";
+    bt7.style.backgroundColor="yellow";
+    winflag=1;
+    fscore+=1;
+    sc1.innerHTML=fscore;
+    scr1.innerHTML=fscore*100;
+    soundwin();
+    }
+else if(val2=='X'&& val5=='X' && val8=='X')
+{
+    bt2.style.backgroundColor="yellow";
+    bt5.style.backgroundColor="yellow";
+    bt8.style.backgroundColor="yellow";
+    winflag=1;
+    fscore+=1;
+    sc1.innerHTML=fscore;
+    scr1.innerHTML=fscore*100;
+    soundwin();
+    }
+else if(val3=='X'&& val6=='X' && val9=='X')
+{
+    bt3.style.backgroundColor="yellow";
+    bt6.style.backgroundColor="yellow";
+    bt9.style.backgroundColor="yellow";
+    winflag=1;
+    fscore+=1;
+    sc1.innerHTML=fscore;
+    scr1.innerHTML=fscore*100;
+    soundwin();
+}
+else if(val1=='X'&& val5=='X' && val9=='X')
+{
+    bt1.style.backgroundColor="yellow";
+    bt5.style.backgroundColor="yellow";
+    bt9.style.backgroundColor="yellow";
+    winflag=1;
+    fscore+=1;
+    sc1.innerHTML=fscore;
+    scr1.innerHTML=fscore*100;
+    soundwin();
+}
+else if(val3=='X'&& val5=='X' && val7=='X')
+{
+    bt3.style.backgroundColor="yellow";
+    bt5.style.backgroundColor="yellow";
+    bt7.style.backgroundColor="yellow";
+    winflag=1;
+    fscore+=1;
+    sc1.innerHTML=fscore;
+    scr1.innerHTML=fscore*100;
+    soundwin();
+}
+
+if(val1=='O'&& val2=='O' && val3=='O')
+ {
+    bt1.style.backgroundColor="pink";
+    bt2.style.backgroundColor="pink";
+    bt3.style.backgroundColor="pink";
+    winflag=1;
+    sscore+=1;
+    sscore.innerHTML=sscore;
+    scr2.innerHTML=sscore*100;
+ }
+ else if(val4=='O'&& val5=='O' && val6=='O')
+{
+    bt4.style.backgroundColor="pink";
+    bt5.style.backgroundColor="pink";
+    bt6.style.backgroundColor="pink";
+    winflag=1;
+    sscore+=1;
+    sscore.innerHTML=sscore;
+    scr2.innerHTML=sscore*100;
+}
+else if(val7=='O'&& val8=='O' && val9=='O')
+{
+    bt7.style.backgroundColor="pink";
+    bt8.style.backgroundColor="pink";
+    bt9.style.backgroundColor="pink";  
+    winflag=1;
+    sscore+=1;
+    sscore.innerHTML=sscore;
+    scr2.innerHTML=sscore*100;
+}
+else if(val1=='O'&& val4=='O' && val7=='O')
+{
+    bt1.style.backgroundColor="pink";
+    bt4.style.backgroundColor="pink";
+    bt7.style.backgroundColor="pink";
+    winflag=1;
+    sscore+=1;
+    sscore.innerHTML=sscore;
+    scr2.innerHTML=sscore*100;
+}
+else if(val2=='O'&& val5=='O' && val8=='O')
+{
+    bt2.style.backgroundColor="pink";
+    bt5.style.backgroundColor="pink";
+    bt8.style.backgroundColor="pink";
+    winflag=1;
+    sscore+=1;
+    sscore.innerHTML=sscore;
+    scr2.innerHTML=sscore*100;
+}
+else if(val3=='O'&& val6=='O' && val9=='O')
+{
+    bt3.style.backgroundColor="pink";
+    bt6.style.backgroundColor="pink";
+    bt9.style.backgroundColor="pink";
+    winflag=1;
+    sscore+=1;
+    sscore.innerHTML=sscore;
+    scr2.innerHTML=sscore*100;
+}
+else if(val1=='O'&& val5=='O' && val9=='O')
+{
+    bt1.style.backgroundColor="pink";
+    bt5.style.backgroundColor="pink";
+    bt9.style.backgroundColor="pink";
+    winflag=1;
+    sscore+=100;
+    sscore.innerHTML=sscore;
+    scr2.innerHTML=sscore*100;
+}
+else if(val3=='O'&& val5=='O' && val7=='O')
+{
+    bt3.style.backgroundColor="pink";
+    bt5.style.backgroundColor="pink";
+    bt7.style.backgroundColor="pink";
+    winflag=1;
+    sscore+=100;
+    sscore.innerHTML=sscore;
+    scr2.innerHTML=sscore*100;
+    }
+}
+
+var s2=new Audio();
+s2.src="./songs/win.mp3"
+function soundwin()
+{
+s2.play();
+
+}
+    
+var s1=new Audio();
+s1.src="./songs/b2.mp3"
+function sound()
+{
+    s1.play();
+}
+
+function f1()
+    {
+    if(flag1==0 && winflag==0)
+    {
+        var bu1=document.getElementById("b1");
+    if (value==0)
+    {
+         bu1.innerText="X";
+         value=1;
+    }
+    else if(value==1)
+    {
+        bu1.innerHTML="O";
+        value=0;
+    }
+    flag1=1;
+    sound();
+    winner();
+    }
+   
+    }
+    function f2()
+    {
+        if(flag2==0 && winflag==0){
+
+       
+    var bu1=document.getElementById("b2");
+if (value==0)
+{
+    bu1.innerText="X";
+    value=1;
+}
+else if(value==1){
+    bu1.innerHTML="O";
+    value=0;
+}
+flag2=1;
+sound();
+winner();
+}
+
+    }
+    function f3()
+    {
+        if(flag3==0 && winflag==0)
+        {
+    var bu1=document.getElementById("b3");
+if (value==0)
+{
+    bu1.innerText="X";
+    value=1;
+}
+else if(value==1){
+    bu1.innerHTML="O";
+    value=0;
+}
+        flag3=1;
+        sound();
+winner();
+        }
+  
+    }
+    function f4()
+       { 
+           if(flag4==0 && winflag==0)
+           {
+    var bu1=document.getElementById("b4");
+if (value==0)
+{
+    bu1.innerText="X";
+    value=1;
+}
+else if(value==1){
+    bu1.innerHTML="O";
+    value=0;
+}
+    flag4=1;
+    sound();
+     winner();
+}
+
+}
+function f5()
+{
+     if (flag5==0 && winflag==0)
+     {
+        var bu1=document.getElementById("b5");
+    if (value==0)
+    {
+        bu1.innerText="X";
+        value=1;
+    }
+    else if(value==1)
+    {
+        bu1.innerHTML="O";
+        value=0;
+    }
+    flag5=1;
+    sound();
+    winner();
+    }
+    
+    }
+    function f6()
+    {
+        if(flag6==0 && winflag==0)
+        { 
+    var bu1=document.getElementById("b6");
+if (value==0)
+{
+    bu1.innerText="X";
+    value=1;
+}
+else if(value==1){
+    bu1.innerHTML="O";
+    value=0;
+}
+flag6=1;
+sound();
+    winner();
+    }
+    
+    }
+    function f7()
+    {
+        if (flag7==0 && winflag==0)
+        {
+    var bu1=document.getElementById("b7");
+if (value==0)
+{
+    bu1.innerText="X";
+    value=1;
+}
+else if(value==1){
+    bu1.innerHTML="O";
+    value=0;
+}
+flag7=1;
+sound();
+        winner();
+        }
+        
+    }
+    function f8()
+    {
+        if (flag8==0 && winflag==0){
+    var bu1=document.getElementById("b8");
+if (value==0)
+{
+    bu1.innerText="X";
+    value=1;
+}
+else if(value==1){
+    bu1.innerHTML="O";
+    value=0;
+}
+flag8=1;
+sound();
+        winner();
+        }
+       
+    }
+    function f9()
+    {
+    if (flag9==0 && winflag==0){
+    var bu1=document.getElementById("b9");
+if (value==0)
+{
+    bu1.innerText="X";
+    value=1;
+}
+else if(value==1){
+    bu1.innerHTML="O";
+    value=0;
+}
+flag9=1;
+sound();
+    winner();
+    }
+  
+    }
+    
+</script>
+    
+
+    
+</body>
+
+
+</html>

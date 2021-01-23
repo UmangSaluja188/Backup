@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            on change
+        </title>
+    </head>
+    <body>
+        <p>
+            select a new car from the list
+        </p>
+        <select id="dropdown" onchange="Event()">
+            <option value="Audi">Audi</option>
+            <option value="bmw">BMW</option>
+            <option value="mercedes">mercedes</option>
+            <option value="vovo">volvo</option>
+        </select>
+        <p id ="p1"></p>
+<script>
+    function Event()
+    {
+        var x=document.getElementById("dropdown").value;
+        document.getElementById("p1").innerHTML="you selected:"+x;
+
+    }
+</script>    </body>
+</html>

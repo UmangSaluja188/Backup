@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <style>
+            .div1{
+        background-color: rgb(37, 195, 223);
+        height: 40px;
+        color:aliceblue;
+        font-weight: 30px;
+        font-size: 30px;
+            }
+            .div2{
+        height: 50px;
+        background-color: gainsboro;
+        margin-top: 5px;
+        padding-left: 400PX;
+        padding-top: 5PX;
+    }
+    .div3{
+        padding-top: 10px;
+    }
+    button{
+        background-color:  rgb(37, 195, 223);
+        color:white;
+        font-weight: 10px;
+        padding: 10px; 
+    }
+        </style>
+    </head>
+    <body>
+        <script>
+            function fun(){
+        var ca1=parseInt(document.getElementById('c1').value);
+        var ca2=parseInt(document.getElementById('c2').value);
+        var ca3=parseInt(document.getElementById('c3').value);
+        var ca4=parseInt(document.getElementById('c4').value);
+        var mid=parseInt(document.getElementById('md').value);
+        var attd=parseInt(document.getElementById('attend').value);
+        var caadd=ca1+ca2+ca3+ca4;
+        var attendencemarks;
+        if(attd>=75&& attd<=80)
+        {
+            attendencemarks= 2;  
+        }
+        else if(attd>80 && attd<=85)
+        {
+            attendencemarks=3;
+        }
+        else if(attd>85 && attd<=90)
+        {
+        attendencemarks=4;
+        }
+        else if(attd>90)
+            {
+                attendenceMarks=5;
+            }
+            else{
+                attendenceMarks=0;
+            }
+        
+            var result=(caadd*30)/100;
+            result+=mid+attendenceMarks;
+            var needMarks=40-result;
+            needMarks=parseInt(needMarks);
+            if(needMarks>=21)
+            {
+                alert("You Gotta Strike  "+needMarks+"/70 To Pass The Exam");
+            }
+            else
+            {
+                alert("You Gotta Strike 21/70 You Actually need "+needMarks+". But to Fulfil all Criteria you Need 21");
+            }
+        
+            }
+        
+        </script>
+        <div class="div1">
+           <center> PE COURSES</center>
+        </div>
+        <div class="div3">
+      <center> Enter all 4 CA Exams(Out of 30)</center>
+    </div>
+    <div>
+    <table><tr><td>CA 1</td>
+        <td>CA 2</td>
+        <td>CA 3</td>
+        <td>CA 4</td></tr>
+
+            <tr><td><input type="number" id="c1"></td>
+                    <td><input type="number" id="c2"></td> 
+                    <td><input type="number" id="c3"></td> 
+                    <td><input type="number" id="c4"></td>
+                        </tr>
+                        <tr><td>Mid term(out of 50)</td>
+                        <td>Attendence percentage</td></tr>
+                        <tr><td><input type="number" id="md"></td>
+                            <td><input type="number" id="attend"></td></tr>
+                        </table> </center>
+                    </div>
+                 <center>   <button onclick="fun()">Select the above Course</button></center>
+    </body>
+</html>

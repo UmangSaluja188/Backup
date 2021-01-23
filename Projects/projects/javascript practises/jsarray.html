@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+       // jas array by using array literals
+       var emp=["sonu","monu","ponu"];
+       document.write("by using array literals"+"<br/>");
+       for (i=0;i<emp.length;i++){
+        document.write(emp[i]+"<br/>");
+       }    
+        </script>
+        <script>
+        //by using array directly using new keyword
+        var emp=new Array();
+        emp[0]="umu";
+        emp[1]="kanu";
+        emp[2]="kashu";
+        document.write("by using array directly"+"<br/>");
+        for (i=0;i<emp.length;i++){
+            document.write("emp"+i+"is"+" "+emp[i]+"<br/>");
+        }
+        </script>
+        <script>
+        //by using array constructor
+        var emp2=new Array("sonu","monu","tony");
+        document.write("by using array constructor"+"<br/>");
+        for (i=0;i<emp2.length;i++){
+            document.write("emp"+i+"is"+" "+emp2[i]+"<br/>");
+        }
+        </script>
+
+    </head>
+    <body>
+        <p>js array</p>
+
+    </body>
+</html>

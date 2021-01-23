@@ -1,0 +1,116 @@
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\Shoping_Cart.dll.config
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\Shoping_Cart.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\Shoping_Cart.pdb
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\csc.exe
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\csc.exe.config
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\csc.rsp
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\csi.exe
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\csi.exe.config
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\csi.rsp
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.AppContext.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Console.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.IO.Compression.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Security.Claims.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.ValueTuple.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\vbc.exe
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\vbc.exe.config
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\vbc.rsp
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\VBCSCompiler.exe
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\obj\Debug\Shoping_Cart.csprojAssemblyReference.cache
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\obj\Debug\Shoping_Cart.csproj.CoreCompileInputs.cache
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\obj\Debug\Shoping_Cart.csproj.CopyComplete
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\obj\Debug\Shoping_Cart.dll
+C:\Users\Nikhil\source\repos\Shoping_Cart\Shoping_Cart\obj\Debug\Shoping_Cart.pdb
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\obj\Debug\Shoping_Cart.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\obj\Debug\Shoping_Cart.csprojAssemblyReference.cache
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\Shoping_Cart.dll.config
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\Shoping_Cart.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\Shoping_Cart.pdb
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\csc.exe
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\csc.exe.config
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\csc.rsp
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\csi.exe
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\csi.exe.config
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\csi.rsp
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.AppContext.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Console.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.IO.Compression.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.IO.Pipes.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Security.Claims.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.ValueTuple.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Xml.XPath.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\vbc.exe
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\vbc.exe.config
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\vbc.rsp
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\VBCSCompiler.exe
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\obj\Debug\Shoping_Cart.csproj.CopyComplete
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\obj\Debug\Shoping_Cart.dll
+C:\Users\DELL\Documents\Visual Studio 2017\Shoping_Cart\Shoping_Cart\obj\Debug\Shoping_Cart.pdb
+F:\shopping cart project\Shoping_Cart\Shoping_Cart\obj\Debug\Shoping_Cart.csprojAssemblyReference.cache
+F:\shopping cart project\Shoping_Cart\Shoping_Cart\obj\Debug\Shoping_Cart.csproj.CoreCompileInputs.cache
+F:\shopping cart project\Shoping_Cart\Shoping_Cart\obj\Debug\Shoping_Cart.dll
+F:\shopping cart project\Shoping_Cart\Shoping_Cart\obj\Debug\Shoping_Cart.pdb

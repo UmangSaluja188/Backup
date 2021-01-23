@@ -1,0 +1,44 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <script>
+            function reverse()
+            {
+                var size=5;
+                var j;
+                var arr=new Array();
+                for(var i=0;i<size;i++)
+                {
+                    j=i+1;
+                    arr[i]=parseInt(prompt("Enter "+j+" element"));
+                }
+                arr=arr.reverse();
+                for(var i=0;i<size;i++)
+                {
+                    alert("After Reverse Array is="+arr[i]);
+                }
+                
+               
+
+            }
+
+            function power()
+            {
+                var value=parseInt(prompt("Please Enter Value="));
+                var power=parseInt(prompt("Please ENter Power="));
+                alert("pow("+value+","+power+") is "+Math.pow(value,power));
+
+
+            }
+
+        </script>
+        <center><h1 style="color:red;margin-top:100px">Third CA Exam -Odd</h1>
+            
+        <button onclick="reverse()">ArrayReverse</button>
+        <button onclick="power()">Math Power</button>
+        </center>
+    </body>
+</html>

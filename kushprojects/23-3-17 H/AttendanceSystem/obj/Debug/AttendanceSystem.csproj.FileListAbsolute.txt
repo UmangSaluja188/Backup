@@ -1,0 +1,2 @@
+H:\23-3-17 H\AttendanceSystem\obj\Debug\AttendanceSystem.csprojAssemblyReference.cache
+H:\23-3-17 H\AttendanceSystem\obj\Debug\AttendanceSystem.csproj.CoreCompileInputs.cache

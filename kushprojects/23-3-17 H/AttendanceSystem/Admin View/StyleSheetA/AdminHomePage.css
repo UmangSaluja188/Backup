@@ -1,0 +1,33 @@
+﻿body {
+}
+.ALLOpt 
+ {
+    width:150px;  
+    height:110px;
+    border:1px solid black;
+    border-radius:8px;
+    margin:7px;
+    float:left;
+   
+}
+    .Image1{
+        border:0.5px solid black;
+        border-radius:4px;
+        height:100px
+    }
+.NEw {
+        border:0.5px solid black;
+        border-radius:4px;
+        margin-top: 20px;
+    margin-right: 1px;
+}
+ .showc {
+        height:40px;
+        width:70%;
+        background-color:#33CCFF;
+        color:white;
+        }
+ .div3 {
+background-color:red;
+float:left;
+}

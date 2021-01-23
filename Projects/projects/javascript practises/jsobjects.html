@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script>
+            //BY Javascript literals//
+            emp={id:101,name:"umang",course:"mca"}
+            document.write("by using javascript literals"+"<br/>");
+        document.write("id is ",emp.id+"<br/>"+"name is ",emp.name+"<br/>"+"course is ",emp.course+"<br/>")
+        </script>
+        <script>
+    // By instance of object
+        var emp1=new Object();
+        emp1.id=102;
+        emp1.name='ravi';
+        emp1.course='bca';
+        document.write("by using instance of object"+"<br/>");
+        document.write(emp1.id+"<br/>"+emp1.name+"<br/>"+emp1.course);
+
+        </script>
+    <script>
+    //by using object constructor
+    function emp2(id,name,salary){
+        this.id=id;
+        this.name=name;
+        this.salary=salary;
+    }
+    e=new emp2(103,"umu",2000);
+    document.write("by using object constructor"+"<br/>");
+    document.write(e.id+"<br/>"+e.name+"<br/>"+e.salary+"<br/>");
+    </script>
+    <script>
+    //by using javascript method in javascript object
+    function emp3(id,name,salary){
+        this.id=id;
+        this.name=name;
+        this.salary;
+
+        this.changeSalary=changeSalary;
+        function changeSalary(otherSalary){
+            this.changeSalary=otherSalary;
+        }
+    }
+      e=new emp3(133,"umang",30000);
+      document.write(e.id+"<br/>"+e.name+"<br/>"+e.salary+"<br/>");
+      e.changeSalary(35000);
+      document.write(e.id+"<br/>"+e.name+"<br/>"+e.salary+"<br/>");
+    </script>
+    </head>
+    <body>
+      <h1>js objects</h1>
+    </body>
+</html>

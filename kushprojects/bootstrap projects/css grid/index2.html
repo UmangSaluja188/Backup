@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS GRID</title>
+    <style>
+    .wrapper{
+        display: grid;
+       /* grid-template-columns: 1fr 4fr 1fr;*/
+        /*grid-template-column*/
+        grid-template-columns: repeat(3, 1fr 2fr);
+        grid-gap: 1em;
+        grid-auto-rows: 100px;
+        grid-auto-rows: minmax(100px,auto);
+    }
+    .wrapper > div{
+        background: #fff;
+        padding: 1em;
+    }
+    .wrapper >div:nth-child(odd){
+        background: #ddd;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>Umang Saluja is my name</div>
+        <div>Umang Saluja is my name
+                Umang Saluja is my name
+                Umang Saluja is my name
+                Umang Saluja is my name
+                Umang Saluja is my name
+                Umang Saluja is my name Umang Saluja is my name Umang Saluja is my nameUmang Saluja is my nameUmang Saluja is my nameUmang Saluja is my name
+        </div>
+        <div>Umang Saluja is my name</div>
+        <div>Umang Saluja is my name</div>
+        <div>Umang saluja is my name</div>
+        <div>Umang saluja is my name</div>
+        <div>Umang saluja is my name</div>
+    </div>
+</body>
+</html>

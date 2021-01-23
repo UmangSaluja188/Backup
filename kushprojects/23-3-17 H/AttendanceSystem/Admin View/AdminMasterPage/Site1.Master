@@ -1,0 +1,182 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.Master.cs" Inherits="AttendanceSystem.Admin_View.AdminMasterPage.Site3" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style>
+        .ProjectName {
+        height:300px;
+        border: 1px solid black;
+        }
+        .row-content {
+            margin-bottom: 0px;
+        }
+        #header {
+        position:fixed;
+        color:white;
+        }
+        #sidenav {
+       height:750px;
+       margin-top:0px;
+         margin-left:0px;
+        }
+        #LeftMenu {
+            list-style-type:none;
+            font-size:15px;
+            margin-left:0px;
+        }
+        .abc ul li {
+            margin-top:3px;
+            border-radius:8px;
+            height:35px;
+            font-size:15px;
+            text-align:center;
+            padding:5px
+        }
+       .abc ul li:hover {
+        background-color:white;
+        }
+        .signout {
+        width:15%;
+        border:1px solid black;
+        font-size:12px;
+        border-radius:10px;
+        z-index:1;
+        
+        }
+    </style>
+   
+   <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script  src="Bootstrap/js/bootstrap.min.js"></script> 
+      <script src="Scripts/JavaScript1.js"></script>
+     <script>
+         $(document).ready(function () {
+             $("#log").click(function () {
+                 $(".signout").slideToggle("slow");
+             });
+         });
+    </script>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         
+           <div>
+               <nav class="navbar navbar-inverse navbar-fixed-top">
+                   <div class="container bg-muted">
+                       <div class="navbar-header" style="font-size:20px">
+                         <a href="../../HomePage1.aspx" class="navbar navbar-brand">Student Attendance <small>System</small></a> 
+                           <ul class="nav navbar-nav">
+                               <li>
+                                   <a href="../AdminMasterPage/AdminHomePage.aspx">Home</a>
+                               </li>
+                                <li>
+                                  <a href="../../HomePage1.aspx#a1"> Contact</a>
+                                  </li>
+                                <li>
+                                  <a href="../../HomePage1.aspx#About"> About</a>
+                                  
+                               </li>
+                                <li>
+                                  
+                                  
+                               </li>
+                                <li>
+                                  
+                                  
+                               </li>
+                              
+                              </ul>
+                           
+                                
+                           
+                       
+                  </div>
+                       <table style="float:right;margin-left:32%">
+                           <tr>
+                               <td>
+                                    <span id="log" class="glyphicon glyphicon-user" style="font-size:35px;color:white;float:right;margin-left:32%; left: 0px; width: 88px;"> </span>
+                               </td>
+                               <td></td>
+                               <td>
+                                       <asp:LinkButton ID="LinkButton1" runat="server" Text="SignOut" OnClick="S1_Click" style="color:white;font-size:20px;float:right;margin-left:9%"></asp:LinkButton>
+
+                               </td>
+                               <td>
+
+                               </td>
+                               <td>
+                               </td>
+                           </tr>
+                       </table>
+                            <asp:LinkButton ID="S1" runat="server" Text="SignOut" OnClick="S1_Click" style="color:white;font-size:20px"></asp:LinkButton>
+                       
+        
+                                 
+                     
+                                  
+                       </div>
+                    
+               </nav>
+
+     
+               </div>
+           <div style="float:right;display:none;margin-top:0px" class="signout" >
+             <div class="bg-warning">
+           <div class="container-fluid">
+                <asp:Image ID="SignOutimg" runat="server" ImageUrl="~/Images/Koala.jpg" Height="80px" Width="80px" CssClass="img img-circle img-responsive" />
+               <center><asp:Button ID="profile" runat="server" CssClass="btn-primary" Text="Profile" Font-Size="25px" /></center>
+         
+                <asp:Button CssClass="btn btn-danger" Text="Change Password" Id="Button2" runat="server"  style="margin:20px;margin-left:0px;border-radius:8px"/>
+                <asp:Button CssClass="btn btn-danger" ID="SignOut"  runat="server"  Text="Sign Out" style="margin:20px;border-radius:8px" OnClick="SignOut_Click"/> 
+
+               </div>  </div>
+        </div>
+        
+             <div  class="row" style="margin-top:7%">
+                 <div class="col-sm-2 bg-success" id="sidenav">
+                     <div style="height:150px"></div>
+                     
+                     <div class="container-fluid" > 
+                         <div class="abc">
+                         <ul class="list-group" style="list-style-type:none">
+                              <li><h1 class="label label-info "  style="font-size:25px;margin-left:10px;width:200px;padding-left:30px;padding-right:30px">Manage</h1></li>
+                             <li class="list-group-item-danger text-danger" style="margin-top:10px"><a href="../Manage_Department/SearchDepartment.aspx">Department</a></li>
+                             <li class="list-group-item-info"><a href="../ManageCourse/SearchCourseDetails.aspx">Course</a></li>
+                             <li class="list-group-item-warning"><a href="../ManageSemester/SearchSemester.aspx">Semester</a></li>
+                             <li class="list-group-item-primary" style="background-color:#FFEEDD"><a href="../Manage Subject/SearchSubjectDetails.aspx">Subject</a></li>
+                             <li class="list-group-item" style="background-color:#E9E6D0"><a href="../ManageTeacherTimeTable/SearchTimeTable.aspx">Time Table</a></li>
+                             <li class="list-group-item"  style="background-color:#FFEEDD;padding:5px"><a href="../ManageStudent/SearchStudentDetails2.aspx">Student</a></li>
+                             <li class="list-group-item-warning"  style="padding:5px"><a href="../ManageTeacher/SearchTeacherRecord.aspx">Teacher</a></li>
+                             <li class="list-group-item-info""  style="padding:5px"><a href="../ManageNotice/SearchNoticeDetails.aspx">Notice</a></li>
+                              <li class="list-group-item-danger"  style="padding:5px"><a href="../ManageFineDetails/SearchFineDetails.aspx">Fine</a></li>
+                              <li class="list-group-item-danger"  style="padding:5px;margin-top:180px"><a href="../CheckAttendance.aspx">Check Student Attendance</a></li>
+
+                              </ul>
+                     </div>
+                         </div>
+                   
+                </div>
+                
+                 <div class="col-sm-10 scrollit">        
+            
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                        </div>
+                
+                </div>
+            
+            
+     <div class="well-lg bg-primary"  style="height:60px;padding:0px;padding-top:3px">
+       
+             <center><h4 style="color:white">Application Developers</h4><h5>Kushaldeep Kaul & Jasvir Bains</h5></center>
+         </div>
+     
+            
+    </form>
+</body>
+</html>

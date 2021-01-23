@@ -1,0 +1,126 @@
+<html>
+<head>
+    <style>
+         .div1{
+        background-color:rgb(255, 208, 0);
+        height: 40px;
+        color:aliceblue;
+        font-weight: 30px;
+        font-size: 30px;
+         }
+         .div2{
+        height: 50px;
+        background-color: gainsboro;
+        margin-top: 5px;
+        padding-left: 400PX;
+        padding-top: 5PX;
+    }
+    button{
+        padding: 10px;
+        background-color: orange;
+        color:white;
+    }
+    </style>
+</head>
+<body>
+    <script>
+     function fun3(){
+      var ca1=parseInt(document.getElementById('c1').value);
+      var ca2=parseInt(document.getElementById('c2').value);
+      var ca3=parseInt(document.getElementById('c3').value);
+      var ca4=parseInt(document.getElementById('c4').value);
+      var ca5=parseInt(document.getElementById('c5').value);
+      var ca6=parseInt(document.getElementById('c6').value);
+      var ca7=parseInt(document.getElementById('c7').value);
+      var ca8=parseInt(document.getElementById('c8').value);
+      var midt1=parseInt(document.getElementById('mid1').value);
+      var midt2=parseInt(document.getElementById('mid2').value);
+      var attd=parseInt(document.getElementById('atd').value);
+      var cadd=ca1+ca2+ca3+ca4+ca5+ca6+ca7+ca8;
+      var attendmarks;
+      if(attd>=75 && attd<=80)
+      {
+          attendmarks=2;
+      }
+      else if(attd>80 && attd<=85)
+      {
+          attendmarks=3;
+      }
+      else if(attd>85 && attd<=90)
+      {
+          attendmarks=4;
+      }
+      else if(attd>90)
+      {
+          attendmarks=5;
+      }
+      else{
+          attendmarks=0;
+      }
+       var result=(cadd*30)/100;
+       result+=midt1+midt2+attd;
+       var needmarks=40-result;
+       var needmarks=parseInt(needmarks);
+       if(needmarks<21)
+       {
+        alert("You Gotta Strike  "+needmarks+"/70 To Pass The Exam"); 
+       }
+       else{
+        alert("You Gotta Strike 21/70 You Actually need "+needmarks+". But to Fulfil all Criteria you Need 21"); 
+       }
+     }
+    
+    
+    </script>
+    <div class="div1">
+       <center> 10 Practical courses</center>
+    </div>
+    <div class="div2">
+            Exam type
+    </div>
+    <div margin-top="10px">
+    Enter Best of 8 Practical Marks OUT OF 50.If you have 100 marks practicals than divide by 2.
+</div>
+<table>
+    <tr>
+        <td>PR1</td>
+        <td>PR2</td>
+        <td>PR3</td>
+        <td>PR4</td>
+    </tr>
+    <tr>
+        <td><input type="number" id="c1"></td>
+        <td><input type="number" id="c2"></td>
+        <td><input type="number" id="c3"></td>
+        <td><input type="number" id="c4"></td>
+    </tr>
+    <tr>
+            <td>PR5</td>
+            <td>PR6</td>
+            <td>PR7</td>
+            <td>PR8</td>
+        </tr> 
+        <tr>
+                <td><input type="number" id="c5"></td>
+                <td><input type="number" id="c6"></td>
+                <td><input type="number" id="c7"></td>
+                <td><input type="number" id="c8"></td>
+            </tr>
+        <tr>
+            <td>
+                MTP1
+            </td>
+            <td>
+                MTP2
+            </td>
+            <td>Attendence percentage(In %)</td>
+        </tr>
+        <tr>
+        <td><input type="number"id="mid1"></td>
+        <td><input type="number" id="mid2"></td>
+        <td><input type="number" id="atd"></td></tr>
+        </table>
+        <center> <button onclick="fun3()"> Calculate Target</button></center>
+</table>
+</body>
+</html>
